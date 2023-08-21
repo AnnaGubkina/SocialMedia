@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  social_media_postgres:
+    image: postgres:15.2
+    container_name: postgres_media
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: social_media_db
+    ports:
+      - "5432:5432"
